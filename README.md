@@ -2,7 +2,7 @@
 Java GUI program to convert temperature
 
 Uses the following basic GUI components
-- JOPtionPane
+- JOptionPane
 - JLabel
 - JTextField
 - JButton
