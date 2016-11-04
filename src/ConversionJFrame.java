@@ -99,6 +99,21 @@ public class ConversionJFrame extends JFrame
 		fToCInputField.addActionListener( new fToCTextFieldHandler() );
 		cToFInputField.addActionListener( new cToFTextFieldHandler() );
 
+		// Register Focus Listener for Input Text Fields
+		fToCInputField.addFocusListener( new FocusListener() {
+			@Override public void focusLost( final FocusEvent fe ) {}
+			@Override public void focusGained( final FocusEvent fe ) {
+				fToCInputField.selectAll();
+			}
+		});
+		
+		cToFInputField.addFocusListener( new FocusListener() {
+			@Override public void focusLost( FocusEvent fe ) {}
+			@Override public void focusGained( FocusEvent fe ) {
+				cToFInputField.selectAll();
+			}
+		});
+		
 		// Register JButton Handler.
 		fToCConvertButton.addActionListener( new fToCButtonHandler() );
 		cToFConvertButton.addActionListener( new cToFButtonHandler() );
