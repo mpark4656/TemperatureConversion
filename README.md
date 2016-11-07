@@ -1,5 +1,5 @@
 # TemperatureConversion
-Java GUI program to convert temperature
+Java GUI program that supports F-C and C-F temperature conversion
 
 ![Image](https://cloud.githubusercontent.com/assets/16367862/20079561/45b88914-a513-11e6-84dc-931d99d53932.png)
 
